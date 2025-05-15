@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tomb Raider - Feedback & Reviews</title>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Unbounded', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .review-form, .reviews-display {
+      max-width: 700px;
+      margin: 2rem auto;
+      background-color: #1e1e1e;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    }
+
+    label, textarea, input, select {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    input, textarea, select {
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+      background-color: #2c2c2c;
+      color: #fff;
+    }
+
+    button {
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      background-color: #c08457;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e1a574;
+    }
+
+    .review-card {
+      background-color: #1a1a1a;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .rating {
+      color: gold;
+    }
+
+    h1 {
+      color: #f2f2f2;
+      font-size: 4rem;
+      text-shadow: 2px 2px 10px #000;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    nav {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+
+    nav a:hover {
+      color: #e63946;
+    }
+  </style>
+</head>
+
+<div class="overlay">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="characters.html">Characters</a>
+    <a href="walkthroughs.html">Walkthroughs</a>
+    <a href="feedback.html">Reviews</a>
+    <a href="community.html">Versions & Community</a>
+    <a href="liveaction.html">Movies & Live Action</a>
+  </nav>
+<body>
+  <h1>Feedback & Reviews</h1>
+  <div class="review-form">
+    <form id="feedbackForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="rating">Rating:</label>
+      <select id="rating" required>
+        <option value="">Choose</option>
+        <option value="⭐">⭐</option>
+        <option value="⭐⭐">⭐⭐</option>
+        <option value="⭐⭐⭐">⭐⭐⭐</option>
+        <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+        <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+      </select>
+
+      <label for="review">Review:</label>
+      <textarea id="review" rows="4" required></textarea>
+
+      <button type="submit">Submit Review</button>
+    </form>
+  </div>
+
+  <div class="reviews-display" id="reviewsDisplay">
+    <h2>What Players Are Saying</h2>
+  </div>
+
+  <script>
+    const form = document.getElementById('feedbackForm');
+    const display = document.getElementById('reviewsDisplay');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const rating = document.getElementById('rating').value;
+      const review = document.getElementById('review').value;
+
+      const card = document.createElement('div');
+      card.classList.add('review-card');
+      card.innerHTML = `<strong>${name}</strong><p class="rating">${rating}</p><p>${review}</p>`;
+      display.appendChild(card);
+
+      form.reset();
+    });
+  </script>
+</body>
+</html>

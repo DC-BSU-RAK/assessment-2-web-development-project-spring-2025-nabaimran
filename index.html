@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomb Raider</title>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Unbounded', sans-serif;
+      overflow: hidden;
+    }
+
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      color: #f2f2f2;
+      font-size: 4rem;
+      text-shadow: 2px 2px 10px #000;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #e63946;
+    }
+
+    body {
+  overflow-y: scroll;
+    }
+
+  </style>
+</head>
+<body>
+  <video class="video-bg" autoplay muted loop>
+    <source src="https://cdn.coverr.co/videos/coverr-epic-forest-1080p.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="overlay">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="characters.html">Characters</a>
+      <a href="walkthroughs.html">Walkthroughs</a>
+      <a href="feedback.html">Reviews</a>
+      <a href="community.html">Versions & Community</a>
+      <a href="liveaction.html">Movies & Live Action</a>
+    </nav>
+    <h1>Welcome to Tomb Raider Universe</h1>
+  </div>
+</body>
+</html>
