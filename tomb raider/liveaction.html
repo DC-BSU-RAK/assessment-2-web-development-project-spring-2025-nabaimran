@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomb Raider - Movies & Live Action</title>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Unbounded', sans-serif;
+      background-color: #0c0c0c;
+      color: #f2f2f2;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .movie-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .movie-card {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
+      text-align: center;
+    }
+
+    .movie-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .movie-card h3 {
+      margin: 1rem 0 0.5rem;
+    }
+
+    .movie-card p {
+      font-size: 0.95rem;
+    }
+
+    .trailers {
+      text-align: center;
+    }
+
+    .trailers iframe {
+      margin: 1rem;
+      width: 300px;
+      height: 170px;
+      border-radius: 10px;
+      border: none;
+    }
+    h1 {
+      color: #f2f2f2;
+      font-size: 4rem;
+      text-shadow: 2px 2px 10px #000;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #e63946;
+  color: #fff;
+}
+
+  </style>
+</head>
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="characters.html">Characters</a></li>
+    <li><a href="walkthroughs.html">Walkthroughs</a></li>
+    <li><a href="feedback.html">Reviews</a></li>
+    <li><a href="community.html">Versions & Community</a></li>
+    <li><a href="evolution.html">Evolution</a></li>
+    <li><a href="liveaction.html">Movies & Live Action</a></li>
+  </ul>
+</nav>
+
+<body>
+  <h1>Tomb Raider - Movies & Live Action</h1>
+
+  <h2>Live Action Films</h2>
+  <div class="movie-section">
+    <div class="movie-card">
+      <img src="Media\tomb raider movie.jpg" alt="Lara Croft: Tomb Raider (2001)">
+      <h3>Lara Croft: Tomb Raider (2001)</h3>
+      <p>Starring Angelina Jolie, the iconic archaeologist battles secret societies and uncovers ancient artifacts.</p>
+    </div>
+    <div class="movie-card">
+      <img src="Media\cradle of life.jpg" alt="The Cradle of Life (2003)">
+      <h3>Tomb Raider: The Cradle of Life (2003)</h3>
+      <p>Jolie returns as Lara, venturing into the cradle of civilization in search of Pandora's Box.</p>
+    </div>
+    <div class="movie-card">
+      <img src="Media\tomb raider 2018 movie.jpg" alt="Tomb Raider (2018)">
+      <h3>Tomb Raider (2018)</h3>
+      <p>Alicia Vikander stars as Lara in a reboot film based on the 2013 game reboot — intense and grounded.</p>
+    </div>
+  </div>
+
+  <h2>Watch Trailers</h2>
+  <div class="trailers">
+    <iframe src="https://www.youtube.com/embed/-0enc2VSiKE" title="Lara Croft: Tomb Raider Trailer"></iframe>
+    <iframe src="https://www.youtube.com/embed/G4bhBabn-wU" title="The Cradle of Life Trailer"></iframe>
+    <iframe src="https://www.youtube.com/embed/8ndhidEmUbI" title="Tomb Raider 2018 Trailer"></iframe>
+  </div>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lara Croft Evolution Timeline</title>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Unbounded', sans-serif;
+      background: linear-gradient(to bottom, #1c1c1c, #121212);
+      color: #fff;
+      padding: 2rem;
+    }
+
+     /* Background Video */
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 5rem 1rem;
+    }
+
+
+    h1 {
+      text-align: center;
+      margin-bottom: 3rem;
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: 2px 2px 10px #000;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 4px;
+      height: 100%;
+      background: #e9c46a;
+      transform: translateX(-50%);
+    }
+
+    .entry {
+      position: relative;
+      width: 50%;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      background-color: #242424;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: all 0.3s ease;
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    .entry.left {
+      left: 0;
+      transform-origin: right center;
+    }
+
+    .entry.right {
+      left: 50%;
+      transform-origin: left center;
+    }
+
+    .entry h2 {
+      color: #e9c46a;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .entry p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .year {
+      position: absolute;
+      top: 1.5rem;
+      width: 100px;
+      background-color: #e9c46a;
+      color: #000;
+      padding: 0.5rem;
+      border-radius: 30px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .left .year {
+      right: -60px;
+    }
+
+    .right .year {
+      left: -60px;
+    }
+
+    @media (max-width: 768px) {
+      .entry, .entry.left, .entry.right {
+        width: 100%;
+        left: 0 !important;
+      }
+
+      .timeline::before {
+        left: 20px;
+      }
+
+      .year {
+        left: 10px !important;
+        right: auto !important;
+      }
+    }
+
+    .visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #e63946;
+  color: #fff;
+}
+
+  </style>
+</head>
+<body>
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="characters.html">Characters</a></li>
+    <li><a href="walkthroughs.html">Walkthroughs</a></li>
+    <li><a href="feedback.html">Reviews</a></li>
+    <li><a href="community.html">Versions & Community</a></li>
+    <li><a href="evolution.html">Evolution</a></li>
+    <li><a href="liveaction.html">Movies & Live Action</a></li>
+  </ul>
+</nav>
+
+
+  <!-- Background Video -->
+  <video class="video-bg" autoplay muted loop>
+    <source src="Media\tomb raider _ lara croft _ in the end _ gmv.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+<h1>Evolution of Lara Croft</h1>
+
+<div class="timeline" id="timeline">
+  <div class="entry left">
+    <div class="year">1996</div>
+    <h2>Original Lara (Tomb Raider)</h2>
+    <p>The first-ever appearance of Lara Croft. Polygonal, bold, and groundbreaking for the time. The original Tomb Raider set the standard for 3D action-adventure gaming.</p>
+  </div>
+
+  <div class="entry right">
+    <div class="year">1997</div>
+    <h2>Tomb Raider II</h2>
+    <p>Lara returns with improved graphics, new weapons, and vehicles. Her iconic dual pistols and braid became gaming legend.</p>
+  </div>
+
+  <div class="entry left">
+    <div class="year">1999</div>
+    <h2>Tomb Raider: The Last Revelation</h2>
+    <p>Introduced flashbacks to Lara’s youth and featured a more refined model and deeper narrative focus.</p>
+  </div>
+
+  <div class="entry right">
+    <div class="year">2003</div>
+    <h2>The Angel of Darkness</h2>
+    <p>A darker, grittier Lara with a new stealth approach. Although the game was controversial, it marked a shift toward a more emotional, serious tone.</p>
+  </div>
+
+  <div class="entry left">
+    <div class="year">2006</div>
+    <h2>Legend, Anniversary, Underworld</h2>
+    <p>Crystal Dynamics rebooted the franchise. Lara got a facelift and better physics, motion capture, and platforming mechanics.</p>
+  </div>
+
+  <div class="entry right">
+    <div class="year">2013</div>
+    <h2>Tomb Raider Reboot</h2>
+    <p>A gritty origin story. This Lara is young, vulnerable, but fiercely determined. The reboot humanized her like never before.</p>
+  </div>
+
+  <div class="entry left">
+    <div class="year">2015</div>
+    <h2>Rise of the Tomb Raider</h2>
+    <p>Polished gameplay and an emotionally driven story. Lara explores Siberia and fights a mysterious organization.</p>
+  </div>
+
+  <div class="entry right">
+    <div class="year">2018</div>
+    <h2>Shadow of the Tomb Raider</h2>
+    <p>The climax of the reboot trilogy. Lara becomes the Tomb Raider, confronting her past and embracing her destiny.</p>
+  </div>
+
+  <div class="entry left">
+    <div class="year">2023</div>
+    <h2>Upcoming Tomb Raider (Rumored)</h2>
+    <p>Crystal Dynamics is working on the next-generation Tomb Raider powered by Unreal Engine 5. Fans eagerly await Lara’s next chapter.</p>
+  </div>
+</div>
+
+<script>
+  const entries = document.querySelectorAll('.entry');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.entry').forEach(entry => {
+    observer.observe(entry);
+  });
+</script>
+
+</body>
+</html>
+
