@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/HP/.vscode/Spring-2025-Web-Dev-1-Assignement-1-Set-Exercises/assessment-2-web-development-project-spring-2025-nabaimran/Media",
+      "program": "c:/Users/HP/.vscode/Spring-2025-Web-Dev-1-Assignement-1-Set-Exercises/assessment-2-web-development-project-spring-2025-nabaimran/Media/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
